@@ -1,0 +1,38 @@
+package chap5;
+
+interface Payable{
+	String play();
+}
+
+abstract class Music implements Payable{
+	String name;
+	int year;
+	Music(String name, int year){
+		
+	}
+	public String getName() {
+		return name;
+	}
+	public int getYear() {
+		return year;
+	}
+	
+	void print() {
+		System.out.println("곡명 = " + name + ", 연도 = " + year);
+	}
+}
+
+class Classic extends Music{
+	String composer;
+	 public String play(){
+		 return getName()+"을 연주합니다.";
+	 }
+	 
+	 Classic(String name, int year, String composer){
+		 
+	 }
+}
+
+public class PayaableInterfaceTest {
+
+}

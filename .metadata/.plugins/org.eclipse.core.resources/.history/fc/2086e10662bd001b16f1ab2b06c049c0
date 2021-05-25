@@ -1,0 +1,15 @@
+package chap5;
+
+class MyPoint{
+	private int x,y;
+	protected MyPoint() {
+		this.x = 100;
+		this.y = 200;
+	}
+	protected disp() {
+		System.out.println("Á¡(x, y) = ("+x+","+y+")");
+	}
+}
+public class MainTest {
+	
+}
